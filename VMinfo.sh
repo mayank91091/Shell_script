@@ -13,3 +13,5 @@ timestamp=$(date +"%Y%m%d_%H%M%S")
 # Create a filename with the timestamp
 filename="resourcetracker_$timestamp.txt"
 
+echo "virtual machine list"
+az vm list --output table > "$filename"
